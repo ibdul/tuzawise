@@ -25,16 +25,27 @@ export default function Home() {
     <main>
       <ScrollUp />
       <Hero />
-      <Features />
-      <About />
+      <div id="features">
+        <Features />
+      </div>
+      <div id="about">
+        <About />
+      </div>
       <CallToAction />
-      <Pricing />
-      <Testimonials />
-      <Faq />
-      <Team />
-      <HomeBlogSection posts={posts} />
-      <Contact />
-      <Clients />
+      <div id="testimonials">
+        <Testimonials />
+      </div>
+      <div id="faqs">
+        <Faq />
+      </div>
+      {/* <Team /> */}
+      <div id="blogs">
+        <HomeBlogSection posts={posts} />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
+      {/* <Clients /> */}
     </main>
   );
 }

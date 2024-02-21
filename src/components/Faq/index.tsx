@@ -7,8 +7,8 @@ const Faq = () => {
       <div className="container">
         <SectionTitle
           subtitle="FAQ"
-          title="Any Questions? Answered"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Frequently Asked Questions"
+          paragraph="Here are some questions we usually receive."
           width="640px"
           center
         />
@@ -16,31 +16,31 @@ const Faq = () => {
         <div className="-mx-4 mt-[60px] flex flex-wrap lg:mt-20">
           <div className="w-full px-4 lg:w-1/2">
             <SingleFaq
-              question="How to use TailGrids?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="What is Tuzawise?"
+              answer="Tuzawise is an AI-powered financial assistant designed to help individuals manage their personal finances more effectively. It offers personalized insights, budgeting advice, investment recommendations, and goal tracking features to empower users to make informed financial decisions."
             />
             <SingleFaq
-              question="How to download icons from LineIcons?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="How does Tuzawise work?"
+              answer="Tuzawise works by analyzing your financial data, including transaction history and spending patterns, to provide personalized recommendations and insights. Users can connect their bank accounts, credit cards, and other financial accounts securely to Tuzawise to access these features."
             />
             <SingleFaq
-              question="Is GrayGrids part of UIdeck?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="Is Tuzawise secure? "
+              answer="Yes, Tuzawise takes the security and privacy of your financial data very seriously. We use advanced encryption technology to protect your information and adhere to strict industry standards and regulations. Your data is securely stored and will never be shared with third parties without your consent."
             />
           </div>
 
           <div className="w-full px-4 lg:w-1/2">
             <SingleFaq
-              question="Can I use this template for commercial project?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="Can I trust Tuzawise with my sensitive financial information?"
+              answer="Absolutely. Tuzawise is committed to safeguarding your sensitive financial information. We employ industry-leading security measures to ensure the confidentiality and integrity of your data. Additionally, we never store your banking credentials on our servers, further enhancing the security of your information."
             />
             <SingleFaq
-              question="Do you have plan to releasing Play Pro?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="How does Tuzawise provide personalized recommendations?"
+              answer="Tuzawise uses advanced AI algorithms to analyze your financial data and generate personalized recommendations tailored to your unique financial situation and goals. These recommendations take into account factors such as spending habits, income, expenses, and risk tolerance to provide relevant and actionable advice."
             />
             <SingleFaq
-              question="Where and how to host this template?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="How can I get support if I have questions or encounter issues with Tuzawise?"
+              answer="If you have any questions or encounter any issues while using Tuzawise, our dedicated support team is here to help. You can contact us via email, live chat, or phone for prompt assistance with any inquiries or concerns."
             />
           </div>
         </div>

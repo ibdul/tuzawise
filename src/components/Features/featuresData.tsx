@@ -17,10 +17,12 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "Free and Open-Source",
-    paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
-    btn: "Learn More",
-    btnLink: "/#",
+    title: "Spending Pattern Analysis",
+    paragraphs:[
+      "Understand Your Spending: Gain insights into your spending habits with detailed analysis of transaction data.",
+      "Identify Opportunities: Discover areas for potential savings and optimization in your spending patterns.",
+      "Track Trends: Monitor trends over time to make informed decisions about your finances."
+    ],
   },
   {
     id: 2,
@@ -38,10 +40,12 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "Modern Design",
-    paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
-    btn: "Learn More",
-    btnLink: "/#",
+    title: "Personalized Budgeting Advice",
+    paragraphs:[
+      "Tailored Recommendations: Receive personalized budgeting recommendations based on your unique financial situation and goals.",
+      "Optimize Your Budget: Efficiently allocate your resources and prevent wasteful spending with actionable advice.",
+      "Stay on Track: Set realistic budgeting goals and receive guidance to help you stay on track towards financial stability."
+    ],
   },
   {
     id: 3,
@@ -91,10 +95,12 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "SaaS Starter Kit",
-    paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
-    btn: "Learn More",
-    btnLink: "/#",
+    title: "Investment Recommendations",
+    paragraphs: [
+    "Personalized Guidance: Receive customized investment suggestions aligned with your risk tolerance and long-term financial objectives.",
+      "Diversify Your Portfolio: Build a diversified investment portfolio tailored to your preferences and goals.",
+      "Maximize Returns: Make informed investment decisions to maximize returns and grow your wealth over time.",
+    ],
   },
   {
     id: 4,
@@ -124,10 +130,13 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "All Essential Integrations",
-    paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
-    btn: "Learn More",
-    btnLink: "/#",
+    title: "Risk Assessment",
+    paragraphs: [
+      "Evaluate Risks: Assess potential risks associated with investment opportunities to make well-informed decisions.",
+      "Understand Trade-offs: Gain insights into the balance between risk and potential returns for each investment option.",
+      "Mitigate Risks: Implement strategies to mitigate risks and safeguard your investments for long-term growth."
+    ],
   },
+
 ];
 export default featuresData;

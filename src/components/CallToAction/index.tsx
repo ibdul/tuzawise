@@ -16,14 +16,13 @@ const CallToAction = () => {
                   </span>
                 </h2>
                 <p className="mx-auto mb-6 max-w-[515px] text-base leading-[1.5] text-white">
-                  There are many variations of passages of Lorem Ipsum but the
-                  majority have suffered in some form.
+                  Join the thousands of users who have already experienced the benefits of Tuzawise and start your journey to financial freedom today. Sign up now and discover the power of personalized financial management at your fingertips.
                 </p>
                 <Link
-                  href="/"
+                  href="/signup"
                   className="bg-secondary inline-block rounded-md border border-transparent px-7 py-3 text-base font-medium text-white transition hover:bg-[#0BB489]"
                 >
-                  Start using Play
+                  Start using Tuzawise
                 </Link>
               </div>
             </div>
