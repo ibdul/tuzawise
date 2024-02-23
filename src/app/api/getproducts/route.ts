@@ -11,4 +11,5 @@ export async function GET(request) {
   /* }); */
   /**/
   /* return NextResponse.json(prices.data); */
+  return NextResponse.json({hi:"world"});
 }

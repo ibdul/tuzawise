@@ -20,5 +20,5 @@ export async function POST(request) {
   /*   cancel_url: "http://localhost:3000", */
   /* }); */
   /**/
-  /* return NextResponse.json(session.url); */
+  return NextResponse.json({hi:"world"});
 }
