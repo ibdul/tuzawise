@@ -20,7 +20,17 @@ export default function RootLayout({
         <head /> will contain the components returned by the nearest parent
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-      <head />
+
+      <head>
+
+        <link rel="stylesheet" href="https://cdn-chatbot.autogon.ai/style.css" />
+        <script src="https://cdn-chatbot.autogon.ai/index.min.js" defer></script>
+        <script>
+          let CHAT_AGENT_ID = "145e8f3f-2d39-4174-8c90-b05961d9b6b8"
+        </script>
+      </head>
+
+      {/* <head /> */}
 
       <body>
         <SessionProvider>
