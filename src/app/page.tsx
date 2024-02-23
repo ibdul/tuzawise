@@ -32,16 +32,16 @@ export default function Home() {
         <About />
       </div>
       <CallToAction />
-      <div id="testimonials">
-        <Testimonials />
-      </div>
+      {/* <div id="testimonials"> */}
+      {/*   <Testimonials /> */}
+      {/* </div> */}
       <div id="faqs">
         <Faq />
       </div>
       {/* <Team /> */}
-      <div id="blogs">
-        <HomeBlogSection posts={posts} />
-      </div>
+      {/* <div id="blogs"> */}
+      {/*   <HomeBlogSection posts={posts} /> */}
+      {/* </div> */}
       <div id="contact">
         <Contact />
       </div>
