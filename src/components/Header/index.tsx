@@ -3,13 +3,28 @@ import { signOut, useSession } from "next-auth/react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import menuData from "./menuData";
 
 const Header = () => {
+  const router = useRouter()
   const { data: session } = useSession();
+  const [is_logged_in, setIsLoggedIn] = useState(false)
+  const pathname = usePathname()
+
+
+  useEffect(()=>{
+    setIsLoggedIn(localStorage.getItem("name") !== null)
+  },[pathname])
+
+  function logout(e){
+    e.preventDefault();
+    setIsLoggedIn(false)
+    localStorage.removeItem("name");
+    router.push("/")
+  }
 
   const pathUrl = usePathname();
   // Navbar toggle
@@ -276,7 +291,8 @@ const Header = () => {
                     )
                     }
                   </>
-                ) : (
+                ) : 
+                    !is_logged_in? (
                   <>
                     {pathUrl !== "/" ? (
                       <>
@@ -316,6 +332,15 @@ const Header = () => {
                       </>
                     )}
                   </>
+                ):(
+                  <button
+                  onClick={logout}
+                          className={`ml-2 rounded-lg px-6 py-3 text-base font-medium text-white duration-300 ease-in-out ${
+                               "bg-primary hover:bg-primary/90 dark:bg-white/10 dark:hover:bg-white/20"
+                          }`}
+                  >
+                  Logout
+                  </button>
                 )}
               </div>
             </div>
