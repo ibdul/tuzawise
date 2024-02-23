@@ -19,6 +19,9 @@ const Signin = () => {
   const loginUser = (e: any) => {
     e.preventDefault();
 
+    router.push("/")
+    return
+
     signIn("credentials", { ...loginData, redirect: false })
       .then((callback) => {
         if (callback?.error) {
