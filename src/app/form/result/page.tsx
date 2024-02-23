@@ -23,10 +23,10 @@ const SignupPage = () => {
           />
           <h2 className="text-xl font-bold" >Overview</h2>
             <ul className="list-disc list-inside">
-            <h3>Total spending</h3>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
+            <h3>Total spending: NGN600k</h3>
+            <li>Web Transactions: NGN300K</li>
+            <li>POS Transactions: NGN200K</li>
+            <li>Others: NGN100K</li>
           </ul>
           <div className="">
 
