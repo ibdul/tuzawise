@@ -1,3 +1,5 @@
+/* eslint-disable */ 
+
 "use client"
 import Script from "next/script";
 
@@ -29,9 +31,9 @@ export default function RootLayout({
       </head>
 
       <Script src="https://cdn-chatbot.autogon.ai/index.min.js" defer></Script>
-        <Script>
-          var CHAT_AGENT_ID = "145e8f3f-2d39-4174-8c90-b05961d9b6b8"
-        </Script>
+      <Script>
+        var CHAT_AGENT_ID = "145e8f3f-2d39-4174-8c90-b05961d9b6b8"
+      </Script>
 
       {/* <head /> */}
 
