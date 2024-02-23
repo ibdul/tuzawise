@@ -15,6 +15,9 @@ const Form = () => {
     const value = Object.fromEntries(data.entries());
     const finalData = { ...value };
 
+    router.push("/form/result")
+    return
+
     fetch("/api/register", {
       method: "POST",
       headers: {
