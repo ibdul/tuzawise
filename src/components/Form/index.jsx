@@ -96,7 +96,7 @@ const Form = () => {
                     type="submit"
                     className="w-full cursor-pointer rounded-md border border-primary bg-primary px-5 py-3 text-base text-white transition duration-300 ease-in-out hover:bg-blue-dark"
                   >
-                    Analyze your spending
+                    Analyze
                   </button>
                 </div>
                 <div>
