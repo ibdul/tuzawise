@@ -56,24 +56,6 @@ const Form = () => {
               </div>
               <form onSubmit={handleSubmit}>
                 <div className="mb-[22px]">
-                  <input
-                    type="text"
-                    placeholder="Name"
-                    name="name"
-                    required
-                    className="w-full rounded-md border border-stroke bg-transparent px-5 py-3 text-base text-dark outline-none transition placeholder:text-dark-6 focus:border-primary focus-visible:shadow-none dark:border-dark-3 dark:text-white dark:focus:border-primary"
-                  />
-                </div>
-                <div className="mb-[22px]">
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    name="email"
-                    required
-                    className="w-full rounded-md border border-stroke bg-transparent px-5 py-3 text-base text-dark outline-none transition placeholder:text-dark-6 focus:border-primary focus-visible:shadow-none dark:border-dark-3 dark:text-white dark:focus:border-primary"
-                  />
-                </div>
-                <div className="mb-[22px]">
                   
                   <label className="flex items-center text-left gap-2 w-full rounded-md border border-stroke bg-transparent px-5 py-3 text-base text-dark outline-none transition placeholder:text-dark-6 focus:border-primary focus-visible:shadow-none dark:border-dark-3 dark:text-white dark:focus:border-primary">
                     Upload statement of account: 
