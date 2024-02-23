@@ -26,7 +26,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://cdn-chatbot.autogon.ai/style.css" />
         <script src="https://cdn-chatbot.autogon.ai/index.min.js" defer></script>
         <script>
-          let CHAT_AGENT_ID = "145e8f3f-2d39-4174-8c90-b05961d9b6b8"
+          let CHAT_AGENT_ID = 145e8f3f-2d39-4174-8c90-b05961d9b6b8
         </script>
       </head>
 
