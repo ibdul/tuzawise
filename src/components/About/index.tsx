@@ -15,11 +15,11 @@ const About = () => {
                   Know about us
                 </h2>
                 <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
-                  Our mission is simple: to empower individuals like you to take control of your finances, make informed decisions, and reach your financial goals with confidence. Whether you're saving for a dream vacation, planning for retirement, or building an emergency fund, Tuzawise is here to help you every step of the way.
+                  Our mission is simple: to empower individuals like you to take control of your finances, make informed decisions, and reach your financial goals with confidence. Whether you are saving for a dream vacation, planning for retirement, or building an emergency fund, Tuzawise is here to help you every step of the way.
                   <br/>
                   With our intuitive platform and cutting-edge AI technology, managing your money has never been easier. From analyzing your spending patterns to offering personalized budgeting advice and investment recommendations, Tuzawise provides the insights and guidance you need to succeed financially.
                   <br/>
-                  We understand the importance of security and privacy when it comes to your financial information. That's why we prioritize the protection of your data with state-of-the-art encryption and compliance measures, ensuring your information remains safe and confidential at all times.
+                  We understand the importance of security and privacy when it comes to your financial information. That is why we prioritize the protection of your data with state-of-the-art encryption and compliance measures, ensuring your information remains safe and confidential at all times.
                 </p>
 
                 <a
