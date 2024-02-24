@@ -3,19 +3,28 @@ import { signIn } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 import toast from "react-hot-toast";
 
 const Form = () => {
   const router = useRouter();
+  const [is_submitting, setIsSubmitting] = useState(false)
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsSubmitting(true)
 
     const data = new FormData(e.currentTarget);
     const value = Object.fromEntries(data.entries());
     const finalData = { ...value };
 
+    setTimeout(()=>{
     router.push("/form/result")
+
+    setIsSubmitting(false)
+
+    }, 7000)
+
     return
 
     fetch("/api/register", {
@@ -56,10 +65,10 @@ const Form = () => {
               </div>
               <form onSubmit={handleSubmit}>
                 <div className="space-y-[22px]">
-<label className="">
+                  <label className="">
                     Enter your financial goal:
                     <textarea name="financial goal" 
-className="flex items-center text-left gap-2 w-full rounded-md border border-stroke bg-transparent px-5 py-3 text-base text-dark outline-none transition placeholder:text-dark-6 focus:border-primary focus-visible:shadow-none dark:border-dark-3 dark:text-white dark:focus:border-primary"
+                      className="flex items-center text-left gap-2 w-full rounded-md border border-stroke bg-transparent px-5 py-3 text-base text-dark outline-none transition placeholder:text-dark-6 focus:border-primary focus-visible:shadow-none dark:border-dark-3 dark:text-white dark:focus:border-primary"
                       required></textarea>
 
                   </label>
@@ -80,12 +89,22 @@ className="flex items-center text-left gap-2 w-full rounded-md border border-str
                   </p>
                 </div>
                 <div className="mb-9">
-                  <button
-                    type="submit"
-                    className="w-full cursor-pointer rounded-md border border-primary bg-primary px-5 py-3 text-base text-white transition duration-300 ease-in-out hover:bg-blue-dark"
-                  >
-                    Analyze
-                  </button>
+
+                  {is_submitting? (
+                    <button
+                      type="submit"
+                      className="w-full cursor-pointer rounded-md border border-primary  text-primary px-5 py-3 text-base  transition duration-300 ease-in-out"
+                    >
+                      <p className="flex gap-2 justify-center text-center items-center "> <span className="w-4 h-4 animate-spin block aspect-square border-2 border-primary rounded-full  border-t-transparent" /> Submitting...</p>
+                    </button>
+                  ):(
+                      <button
+                        type="submit"
+                        className="w-full cursor-pointer rounded-md border border-primary bg-primary px-5 py-3 text-base text-white transition duration-300 ease-in-out hover:bg-blue-dark"
+                      >
+                        Analyze
+                      </button>
+                    )}
                 </div>
                 <div>
                   <h2 className="font-semibold">
