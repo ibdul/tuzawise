@@ -55,8 +55,14 @@ const Form = () => {
                 </Link>
               </div>
               <form onSubmit={handleSubmit}>
-                <div className="mb-[22px]">
-                  
+                <div className="space-y-[22px]">
+<label className="">
+                    Enter your financial goal:
+                    <textarea name="financial goal" 
+className="flex items-center text-left gap-2 w-full rounded-md border border-stroke bg-transparent px-5 py-3 text-base text-dark outline-none transition placeholder:text-dark-6 focus:border-primary focus-visible:shadow-none dark:border-dark-3 dark:text-white dark:focus:border-primary"
+                      required></textarea>
+
+                  </label>
                   <label className="flex items-center text-left gap-2 w-full rounded-md border border-stroke bg-transparent px-5 py-3 text-base text-dark outline-none transition placeholder:text-dark-6 focus:border-primary focus-visible:shadow-none dark:border-dark-3 dark:text-white dark:focus:border-primary">
                     Upload statement of account: 
                     <input
