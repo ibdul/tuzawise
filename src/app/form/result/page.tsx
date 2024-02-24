@@ -23,10 +23,10 @@ const SignupPage = () => {
           />
           <h2 className="text-xl font-bold" >Overview</h2>
             <ul className="list-disc list-inside">
-            <h3>Total spending: NGN600k</h3>
-            <li>Web Transactions: NGN300K</li>
-            <li>POS Transactions: NGN200K</li>
-            <li>Others: NGN100K</li>
+            <h3>Total spending: <b>NGN5.2M</b></h3>
+            <li>Web Transactions: <b>NGN1.4M</b></li>
+            <li>POS Transactions: <b>NGN3M</b></li>
+            <li>Others: <b>NGN1.8M</b></li>
           </ul>
           <div className="">
 
@@ -34,7 +34,7 @@ const SignupPage = () => {
               Trends
             </h2>
             <p>
-              Your spending has remained relatively consistent over the past three months, with a slight increase in dining out expenses.
+                Your expenditure has maintained a relatively stable pattern throughout the preceding three months, albeit showing a slight rise in dining out expenses.
             </p>
           </div>
           <div className="">
@@ -42,7 +42,7 @@ const SignupPage = () => {
               Areas for Improvement
             </h2>
             <p>
-              Consider reducing expenses in the miscellaneous category, where the majority of your discretionary spending occurs.
+                You may want to think about cutting back on expenses in the miscellaneous category since that's where most of your optional spending happens.
             </p>
           </div>
           </div>
@@ -59,22 +59,29 @@ const SignupPage = () => {
           />
           <h2 className="text-xl font-bold" >Personalized Suggestions</h2>
           <ul className="list-disc list-inside">
-            <h3>  Consider diversifying your portfolio with a mix of stocks and bonds to mitigate risk.</h3>
-            <li>Explore investment opportunities in low-cost index funds for long-term growth.</li>
+            <h3>
+                You might want to consider spreading out your investments by including both stocks and bonds. This can help reduce the overall risk in your portfolio.
+              </h3>
+
+            <li>
+                Take a look at investing in low-cost index funds as they offer great potential for long-term growth.
+              </li>
           </ul>
           <div className="">
             <h2 className="font-bold text-md">
-Recommended Investments:
+                Recommended Investments:
             </h2>
           <ul className="list-disc list-inside">
-            <li>Consider diversifying your portfolio with a mix of stocks and bonds to mitigate risk.</li>
-            <li>Explore investment opportunities in low-cost index funds for long-term growth.</li>
+            <li>
+You may want to think about diversifying your portfolio by including a combination of stocks and bonds. This can help reduce the overall risk in your investments.
+                </li>
+            <li>Explore the possibility of investing in low-cost index funds for potential long-term growth.</li>
           </ul>
           <div></div>
           </div>
           <div className="">
             <h2 className="font-bold text-md"> Diversification </h2>
-            <p> Investing in both stocks and bonds can help spread risk and optimize returns for your investment portfolio. </p>
+            <p>Including both stocks and bonds in your investment portfolio can help spread out risk and improve potential returns.</p>
           </div>
           </div>
         </div>
@@ -87,22 +94,18 @@ Recommended Investments:
             paragraph="Learn how to make better spend of your money"
           />
           <h2 className="text-xl font-bold" >Budget Overview</h2>
-            <p>Your current budget is aligned with your financial goals, with a focus on saving for emergencies and discretionary spending.</p>
+            <p>Your budget currently reflects your financial goals well, with an emphasis on saving for emergencies and discretionary spending.</p>
           <ul className="list-disc list-inside">
-            <h3>  Consider diversifying your portfolio with a mix of stocks and bonds to mitigate risk.</h3>
-            <li>Explore investment opportunities in low-cost index funds for long-term growth.</li>
+            <h3>You might want to consider diversifying your portfolio by including a combination of stocks and bonds. This can help reduce the overall risk in your investments.</h3>
+            <li>Explore the potential investment opportunities available in low-cost index funds, which are known for their potential for long-term growth.</li>
           </ul>
           <div className="">
             <h2 className="font-bold text-md">
                 Budgeting Recommendations:
             </h2>
               <ul className="list-disc list-inside">
-                <li>
-                  Consider setting aside a specific amount each month for savings and investments to reach your long-term financial goals.
-                </li>
-                <li>
-                  Track your spending more closely to identify areas where you can cut back and reallocate funds towards your priorities.
-                </li>
+                <li>You may want to think about setting aside a set amount each month for savings and investments. This can help you work towards achieving your long-term financial goals.</li>
+                <li>Keep a closer eye on your spending to pinpoint areas where you could reduce expenses. By doing so, you can free up funds to allocate towards your top priorities.</li>
               </ul>
           <div></div>
           </div>
@@ -110,9 +113,7 @@ Recommended Investments:
             <h2 className="font-bold text-md">
               Areas for Improvement
             </h2>
-            <p>
-              Consider reducing expenses in the miscellaneous category, where the majority of your discretionary spending occurs.
-            </p>
+            <p>Think about cutting down on expenses in the miscellaneous category, as this is where most of your optional spending tends to happen.</p>
           </div>
           </div>
         </div>
