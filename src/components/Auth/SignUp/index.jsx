@@ -4,39 +4,31 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
+import { useState } from "react";
 
 const SignUp = () => {
   const router = useRouter();
+  const [is_submitting, setIsSubmitting] = useState(false)
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsSubmitting(true)
 
     const data = new FormData(e.currentTarget);
     const value = Object.fromEntries(data.entries());
     const finalData = { ...value };
 
+
+    setTimeout(()=>{
     localStorage.setItem("name", data.get("name"))
     localStorage.setItem("email", data.get("email"))
     localStorage.setItem("password", data.get("password"))
 
-    router.push("/form")
-    return
-
-    fetch("/api/register", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(finalData),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        toast.success("Successfully registered");
-        router.push("/auth/signin");
-      })
-      .catch((err) => {
-        toast.error(err.message);
-      });
+    setIsSubmitting(false)
+      router.push("/form")
+      return
+    }, 3000)
   };
 
   return (
@@ -86,6 +78,16 @@ const SignUp = () => {
                     className="w-full rounded-md border border-stroke bg-transparent px-5 py-3 text-base text-dark outline-none transition placeholder:text-dark-6 focus:border-primary focus-visible:shadow-none dark:border-dark-3 dark:text-white dark:focus:border-primary"
                   />
                 </div>
+                <div className="">
+                  {is_submitting? (
+                    <button
+                      type="submit"
+                      className="w-full cursor-pointer rounded-md border border-primary  text-primary px-5 py-3 text-base  transition duration-300 ease-in-out mb-2"
+                    >
+                      <p className="flex gap-2 justify-center text-center items-center "> <span className="w-4 h-4 animate-spin block aspect-square border-2 border-primary rounded-full  border-t-transparent" /> Submitting...</p>
+                    </button>
+                  ):(
+
                 <div className="mb-9">
                   <button
                     type="submit"
@@ -93,6 +95,8 @@ const SignUp = () => {
                   >
                     Sign Up
                   </button>
+                </div>
+                    )}
                 </div>
               </form>
               <span className="z-1 relative mb-7 block text-center">
